@@ -5,3 +5,7 @@ $(".nav-switch").click(function() {
 $(".checkbox-container").click(function() {
     $(this).toggleClass("checkbox_active");
 });
+
+function redirect(URL) {
+    window.location = URL;
+}
