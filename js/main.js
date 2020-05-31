@@ -9,3 +9,7 @@ $(".checkbox-container").click(function() {
 function redirect(URL) {
     window.location = URL;
 }
+
+$(".filters-toggle-btn").click(function() {
+    $(".filters-menu").toggleClass("filters-menu-active");
+});

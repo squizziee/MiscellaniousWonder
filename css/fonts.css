@@ -7,3 +7,8 @@
     font-family: ProximaNova;
     src: url(../fonts/ProximaNova-Regular.woff);
 }
+
+@font-face {
+    font-family: ApercuMedium;
+    src: url(../fonts/ApercuProMedium.woff2);
+}
