@@ -13,3 +13,7 @@ function redirect(URL) {
 $(".filters-toggle-btn").click(function() {
     $(".filters-menu").toggleClass("filters-menu-active");
 });
+
+$(".close-animatedModal").click(function() {
+    location.reload();
+})

@@ -12,3 +12,8 @@
     font-family: ApercuMedium;
     src: url(../fonts/ApercuProMedium.woff2);
 }
+
+@font-face {
+    font-family: ApercuBold;
+    src: url(../fonts/ApercuPro-Bold.woff2);
+}
