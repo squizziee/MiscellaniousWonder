@@ -637,7 +637,7 @@ a {
     padding-left: 20px;
 }
 
-.catalog-card .formats span {
+.catalog-card .formats .format {
     font-family: Apercu;
     font-size: 14px;
     margin-right: 10px;
@@ -740,6 +740,19 @@ a {
     padding-left: 30px;
 }
 
+.modal-title .modal-formats {
+    position: absolute;
+    right: 30px;
+}
+
+.modal-title .modal-formats .format {
+    font-family: Apercu;
+    font-size: 14px;
+    margin-left: 10px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
 .modal-title .bold {
     font-family: "Montserrat", sans-serif;
     font-size: 20px;
@@ -820,6 +833,69 @@ a {
     height: 200px;
     width: 100%;
     display: flex;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
     border-bottom: .5px solid rgba(0, 0, 0, .05);
 }
+
+.main-info-part {
+    width: 25%;
+    height: 50%;
+}
+
+.main-info-part .author {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.main-info-part .author span {
+    font-family: ApercuMedium;
+    font-size: 14px;
+    margin-left: 15px;
+}
+
+.main-info-part .author .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .05);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-info-part .title {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 5px;
+}
+
+.main-info-part .title span {
+    font-family: ApercuBold;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.main-info-part .title i {
+    font-size: 14px;
+    transform: translateY(-4px);
+}
+
+.main-info-part .text {
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.main-info-part .text span {
+    font-family: Apercu;
+    font-size: 14px;
+}
+
