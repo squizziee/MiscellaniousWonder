@@ -178,26 +178,64 @@
                     <span>Close</span>
                 </div>
             </div>
+            <div class="modal-title">
+                <span class="bold">2017 Nissan GT-R</span>
+                <span class="thin premium"><i class="fas fa-crown"></i>Premium 3D Model</span>
+            </div>
             <div class="pictures">
-                <div class="swiper-container">
+                <div class="swiper-container gallery-thumbs">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg">
+                        <div class="swiper-slide"
+                            style="background-image: url(img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg);">
+
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg">
+                        <div class="swiper-slide"
+                            style="background-image: url(img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg);">
+
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg">
+                        <div class="swiper-slide"
+                            style="background-image: url(img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg);">
+
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg">
+                        <div class="swiper-slide"
+                            style="background-image: url(img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg);">
+
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg">
+                        <div class="swiper-slide"
+                            style="background-image: url(img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg);">
+
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg">
+                        <div class="swiper-slide"
+                            style="background-image: url(img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg);">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-container gallery-top">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"
+                            style="background-image: url(img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg);">
+
+                        </div>
+                        <div class="swiper-slide"
+                            style="background-image: url(img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg);">
+
+                        </div>
+                        <div class="swiper-slide"
+                            style="background-image: url(img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg);">
+
+                        </div>
+                        <div class="swiper-slide"
+                            style="background-image: url(img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg);">
+
+                        </div>
+                        <div class="swiper-slide"
+                            style="background-image: url(img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg);">
+
+                        </div>
+                        <div class="swiper-slide"
+                            style="background-image: url(img/Factotum-Pictures-Nissan-GT-R-2017-full-size.jpg);">
+
                         </div>
                     </div>
                     <div class="swiper-button-prev"></div>
@@ -205,25 +243,7 @@
                 </div>
             </div>
             <div class="main-info">
-                <div class="main-info-half">
-                    <div class="title">
-                        <span class="bold"><i class="fas fa-paint-brush"></i>2017 Nissan GT-R</span>
-                        <span class="thin">Premium 3D Model</span>
-                    </div>
-                    <div class="author">
-                        <span class="bold"><i class="fas fa-user"></i>Dmitry Lagatsky</span>
-                        <span class="thin">The creator of the project</span>
-                    </div>
-                </div>
-                <div class="main-info-half">
-                    <div class="title">
-                        <span><i class="fas fa-quote-left"></i>Description</span>
-                    </div>
-                    <div class="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi delectus expedita quia? Sit
-                        voluptas sequi repellendus similique unde cum.
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -239,16 +259,28 @@
         });
     </script>
     <script>
-        $(document).ready(function () {
-            var mySwiper = new Swiper('.swiper-container', {
-                slidesPerView: 2,
-                spaceBetween: 0,
-                centeredSlides: true,
-                loop: true,
-                autoplay: {
-                    delay: 5000,
-                },
-            });
+        var galleryThumbs = new Swiper('.gallery-thumbs', {
+            spaceBetween: 0,
+            slidesPerView: 4,
+            freeMode: true,
+            watchSlidesVisibility: true,
+            watchSlidesProgress: true,
+            direction: "vertical"
+        });
+        var galleryTop = new Swiper('.gallery-top', {
+            spaceBetween: 0,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: galleryThumbs
+            },
+            direction: "vertical",
+            loop: true,
+            autoplay: {
+                delay: 5000
+            },
         });
     </script>
 </body>
