@@ -211,6 +211,11 @@ a {
     transition: .1s linear;
 }
 
+.navbar-menu-option-active {
+
+}
+
+/* .navbar-menu-option-active:nth-child(1)::after, */
 .navbar-menu-option:nth-child(1)::after {
     background: #74b9ff;
     box-shadow: 0 0 20px #74b9ff;
@@ -251,46 +256,55 @@ a {
     box-shadow: 0 0 20px #f1c40f;
 }
 
+.navbar-menu-option-active::after,
 .navbar-menu-option:hover::after {
     transform: scaleY(100%);
 }
 
-.navbar-menu-option:hover i.fa-skating {
+.navbar-menu-option:hover i.fa-skating,
+.navbar-menu-option-active i.fa-skating {    
     color: #74b9ff;
     text-shadow: 0 0 30px #74b9ff;
 }
 
-.navbar-menu-option:hover i.fa-bicycle {
+.navbar-menu-option:hover i.fa-bicycle,
+.navbar-menu-option-active i.fa-bicycle {
     color: #b8e994;
     text-shadow: 0 0 30px #b8e994;
 }
 
-.navbar-menu-option:hover i.fa-chair {
+.navbar-menu-option:hover i.fa-chair,
+.navbar-menu-option-active i.fa-chair {
     color: #f8c291;
     text-shadow: 0 0 30px #f8c291;
 }
 
-.navbar-menu-option:hover i.fa-mobile-alt {
+.navbar-menu-option:hover i.fa-mobile-alt,
+.navbar-menu-option-active i.fa-mobile-alt {
     color: #fd7272;
     text-shadow: 0 0 30px #fd7272;
 }
 
-.navbar-menu-option:hover i.fa-spider {
+.navbar-menu-option:hover i.fa-spider,
+.navbar-menu-option-active i.fa-spider {
     color: #9c88ff;
     text-shadow: 0 0 30px #9c88ff;
 }
 
-.navbar-menu-option:hover i.fa-leaf {
+.navbar-menu-option:hover i.fa-leaf,
+.navbar-menu-option-active i.fa-leaf {
     color: #2ecc71;
     text-shadow: 0 0 30px #2ecc71;
 }
 
-.navbar-menu-option:hover i.fa-bomb {
+.navbar-menu-option:hover i.fa-bomb,
+.navbar-menu-option-active i.fa-bomb {
     color: #e74c3c;
     text-shadow: 0 0 30px #e74c3c;
 }
 
-.navbar-menu-option:hover i.fa-pizza-slice {
+.navbar-menu-option:hover i.fa-pizza-slice,
+.navbar-menu-option-active i.fa-pizza-slice {
     color: #f1c40f;
     text-shadow: 0 0 30px #f1c40f;
 }

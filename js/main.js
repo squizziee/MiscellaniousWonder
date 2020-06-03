@@ -16,7 +16,11 @@ $(".filters-toggle-btn").click(function () {
 
 $(".close-animatedModal").click(function () {
     location.reload();
-})
+});
+
+$(".navbar-menu-option").click(function() {
+    $(this).toggleClass("navbar-menu-option-active");
+});
 
 $('.count .number').each(function () {
     $(this).prop('Counter', 0).animate({
