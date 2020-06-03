@@ -917,15 +917,61 @@ a {
 }
 
 .modal-bottom .purchase-btn {
-    font-family: Apercu;
-    font-size: 18px;
+    font-family: ApercuMedium;
+    font-size: 15px;
     position: absolute;
-    text-transform: uppercase;
     right: 0;
-    background: #b8e994;
+    border-left: 2.5px solid #fff;
     height: 100%;
     width: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.modal-bottom .purchase-btn:hover span,
+.modal-bottom .purchase-btn:hover i {
+    background: #000;
+    color: #fff;
+}
+
+.modal-bottom .purchase-btn span {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 20px;
+    background: #b8e994;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transition: .2s ease-in-out;
+}
+
+.modal-bottom .purchase-btn i {
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    line-height: 40px;
+    background: #b8e994;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    margin-right: 1px;
+    font-size: 15px;
+    transition: .2s ease-in-out;
+}
+
+.modal-bottom .purchase-icon {
+    position: absolute;
+    right: 200px;
+    height: 100%;
+    width: 70px;
+    background: #b8e994;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #b8e994;
 }
